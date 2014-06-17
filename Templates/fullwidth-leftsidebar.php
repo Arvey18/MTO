@@ -5,10 +5,10 @@ Template Name: Full Width Page With Left Sidebar Only
 get_header(); ?>
 	<section class="container-fluid contents">
 		<div class="row">
-		<div class="col-md-3 contents">
+<!-- 		<div class="col-md-3 contents">
 			<?php get_sidebar(); ?>
-		</div>
-		<div class="col-md-9 contents">
+		</div> -->
+		<div class="col-md-12 contents">
 		<?php 
 			if(is_front_page()) 
 			{

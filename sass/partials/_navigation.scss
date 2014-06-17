@@ -1,19 +1,18 @@
 .navbar{
 	z-index: 10;
 	background-color: $white;
-	height: 80px;
+	height: 70px;
 	border: 0px;
 	border-radius: 0px;
-	border-color: $white;
-	border-bottom: 5px solid $medium-gray;
+	border-bottom: 3px solid $medium-gray;
 		.site-title{
 			float: left;
-			padding: 20px;
+			padding: 15px;
 			.navbar-brand{
 				color: $dark-gray;
 				font-family: 'RobotoSlab-Bold';
-				font-size: 24px;
-				padding: 0px;
+				font-size: 18px;
+				padding: 10px;
 				width: auto;
 				height: auto;
 				float: left;
@@ -23,7 +22,7 @@
 				position: relative;
 				color: $medium-gray;
 				font-family: 'OpenSans-Light';
-				font-size: 14px;
+				font-size: 12px;
 				text-transform: uppercase;
 				float: left;
 				clear: both;
@@ -35,8 +34,8 @@
 		li{
 			position: relative;
 			min-width: 130px;
-			height: 75px;
-			padding: 10px 10px;
+			// height: 75px;
+			padding: 7px 0px;
 			text-align: center;
 
 			&.active{
@@ -65,38 +64,44 @@
 	}
 }
 
+#navigation .navbar-toggle {
+	margin-top: 12px;
+	border: 0px;
+	background: transparent;
+	.icon-bar {
+		background-color: #000;
+		height: 5px;
+		width: 35px;
+		border-radius: 5px;
+	}	
+}
+
+.navbar-nav{
+	margin-bottom: 0px;
+}
+
 /***********
  Navigation Media Queries
 ***********/
 
 @media screen and ( max-width: 700px ){
-  	.navigation-class{
-		width: 25%;
-		height: 100%;
-		position: fixed;
-		top: 0px;
-		right: -25%;
-		overflow-x: hidden;
-		overflow-y: auto;
-		background: white;
-		-webkit-transition: all 0.3s ease;		
-		-moz-transition: all 0.3s ease;
-		-o-transition: all 0.3s ease;
-		-ms-transition: all 0.3s ease;
-		transition: all 0.3s ease;
+	#navbar-collapse-1{
+		border-bottom: 1px solid #5E5E5E;
 	}
-	.animate-nav{
-		margin-right: 25%;
-	}
-	.navbar-toggle-animate{
-		margin-right: 26%;
-	}
-	.navbar-toggle{
-		-webkit-transition: all 0.3s ease;		
-		-moz-transition: all 0.3s ease;
-		-o-transition: all 0.3s ease;
-		-ms-transition: all 0.3s ease;
-		transition: all 0.3s ease;
+	.navbar{
+		.nav-bar-wrapper{
+		padding: 0px;
+		}
 	}
 }
 
+@media screen and (max-width:768px){
+	#navbar-collapse-1{
+		border-bottom: 1px solid #5E5E5E;
+	}
+	.navbar{
+		.nav-bar-wrapper{
+		padding: 0px;
+		}
+	}
+}

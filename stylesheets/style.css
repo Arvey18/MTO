@@ -52,23 +52,23 @@
 .navbar {
   z-index: 10;
   background-color: white;
-  height: 80px;
+  height: 70px;
   border: 0px;
   border-radius: 0px;
   border-color: white;
-  border-bottom: 5px solid #858585;
+  border-bottom: 3px solid #858585;
 }
 /* line 9, ../sass/partials/_navigation.scss */
 .navbar .site-title {
   float: left;
-  padding: 20px;
+  padding: 15px;
 }
 /* line 12, ../sass/partials/_navigation.scss */
 .navbar .site-title .navbar-brand {
   color: #1d1d1d;
   font-family: 'RobotoSlab-Bold';
-  font-size: 24px;
-  padding: 0px;
+  font-size: 18px;
+  padding: 10px;
   width: auto;
   height: auto;
   float: left;
@@ -79,7 +79,7 @@
   position: relative;
   color: #858585;
   font-family: 'OpenSans-Light';
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   float: left;
   clear: both;
@@ -93,8 +93,7 @@
 .navbar .nav li {
   position: relative;
   min-width: 130px;
-  height: 75px;
-  padding: 10px 10px;
+  padding: 7px 0px;
   text-align: center;
 }
 /* line 42, ../sass/partials/_navigation.scss */
@@ -123,44 +122,11 @@
   text-transform: uppercase;
 }
 
-/***********
- Navigation Media Queries
-***********/
 @media screen and (max-width: 700px) {
   /* line 73, ../sass/partials/_navigation.scss */
-  .navigation-class {
-    width: 25%;
-    height: 100%;
-    position: fixed;
-    top: 0px;
-    right: -25%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    background: white;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-
-  /* line 88, ../sass/partials/_navigation.scss */
-  .animate-nav {
-    margin-right: 25%;
-  }
-
-  /* line 91, ../sass/partials/_navigation.scss */
-  .navbar-toggle-animate {
-    margin-right: 26%;
-  }
-
-  /* line 94, ../sass/partials/_navigation.scss */
-  .navbar-toggle {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  .nav li {
+    border-bottom: 1px solid #5E5E5E;
+    border-top: 1px solid #5E5E5E;
   }
 }
 /* line 1, ../sass/partials/_footer.scss */
@@ -210,8 +176,6 @@
   position: relative;
   clear: both;
   color: #fcfcfc;
-  margin-top: 15px;
-  margin-left: 10px;
 }
 /* line 45, ../sass/partials/_footer.scss */
 .before-footer .contacts_before_footer .detail {
@@ -238,17 +202,25 @@
 /* line 67, ../sass/partials/_footer.scss */
 .footer {
   height: auto;
+  border-bottom: 3px solid #5E5E5E;
 }
-/* line 69, ../sass/partials/_footer.scss */
+/* line 70, ../sass/partials/_footer.scss */
 .footer .footertext {
   color: #1d1d1d;
   font-family: 'RobotoSlab-Light';
-  font-size: 18px;
+  font-size: 15px;
   padding: 5px 0px;
   margin-bottom: 0px;
+  font-weight: bold;
+}
+/* line 77, ../sass/partials/_footer.scss */
+.footer .footertext span {
+  display: block;
+  font-weight: normal;
+  font-size: 10px;
 }
 
-/* line 79, ../sass/partials/_footer.scss */
+/* line 86, ../sass/partials/_footer.scss */
 .sidebar.footer .widget-content ul {
   padding: 0;
 }
@@ -348,13 +320,57 @@
   text-align: right;
 }
 
-/* line 16, ../sass/style.scss */
+/* line 4, ../sass/partials/_home.scss */
+.image-links {
+  text-align: center;
+}
+/* line 6, ../sass/partials/_home.scss */
+.image-links h1 {
+  padding: 80px 0px;
+}
+
+/* line 11, ../sass/partials/_home.scss */
+.image-link1 {
+  background-color: #ccc;
+  border-bottom: 3px solid #5E5E5E;
+}
+
+/* line 16, ../sass/partials/_home.scss */
+.image-link2 {
+  background-color: #A8A8A8;
+  border-bottom: 3px solid #5E5E5E;
+}
+
+/* line 21, ../sass/partials/_home.scss */
+.image-link3 {
+  background-color: #8A8A8A;
+  border-bottom: 3px solid #5E5E5E;
+}
+
+/* line 26, ../sass/partials/_home.scss */
+.home-header {
+  background-color: #fff;
+  margin-top: 60px;
+  border-bottom: 3px solid #5E5E5E;
+  text-align: center;
+  padding: 300px 0px;
+}
+
+/* line 17, ../sass/style.scss */
 body {
   padding: 0px;
   overflow-x: hidden;
 }
 
 /* line 22, ../sass/style.scss */
+.wrapper {
+  height: auto;
+  max-width: 1060px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* line 29, ../sass/style.scss */
 .navbar-default {
   margin-bottom: 0px;
 }
@@ -362,7 +378,7 @@ body {
 /***********************
 Sidebar Properties
 ***********************/
-/* line 28, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .sidebar {
   padding-left: 0;
 }
@@ -370,25 +386,25 @@ Sidebar Properties
 /***********************
 contents Properties
 ***********************/
-/* line 35, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .contents {
   background: #fdfdfd;
 }
-/* line 37, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .contents .row {
   margin-left: 100px;
   margin-right: 100px;
 }
-/* line 41, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .contents .entry-content {
   width: 800px;
 }
-/* line 45, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .contents.col-md-6 .entry-content {
   width: inherit;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 a,
 a:hover,
 a:active,
